@@ -81,3 +81,10 @@ nav ul a{
       color: white;
   }
 
+  #btn-pizza{
+      text-align: center;
+  }
+  #order{
+      height: 100vh;
+      padding-top: 20%;
+  }

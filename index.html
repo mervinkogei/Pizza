@@ -29,113 +29,113 @@
         </div>
         <div class="quote">
             <p> "The difference between pizza and your opinion <br> is that i actually asked for Pizza"</p>
-            <button class="bg-warning" id="order">ORDER NOW !</button>
+            <button class="bg-warning" id="pizza-order">ORDER NOW !</button>
         </div>
     </div>
 
+
+
+    <nav class="navbar navbar-inverse bg-inverse fixed-top bg-faded">
+        <div class="row">
+            <div class="col">
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#cart">Cart
+                    (<span class="total-count"></span>)</button><button class="clear-cart btn btn-danger">Clear
+                    Cart</button></div>
+        </div>
+    </nav>
+
+
+    <!-- Main -->
     <div id="order">
-    <div class="container">
-        <nav class="navbar navbar-inverse bg-inverse fixed-top bg-faded">
-            <div class="row">
-                <div class="col">
-                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#cart">Cart (<span
-                            class="total-count"></span>)</button><button class="clear-cart btn btn-danger">Clear
-                        Cart</button></div>
-            </div>
-        </nav>
-
-
-        <!-- Main -->
-
-        
-                <h2 class="text-center">Make Order:</h2>
+        <div class="container">
+            <h2 class="text-center">Make Order:</h2>
             <div class="row">
                 <div class="col">
                     <div class="card" style="width: 20rem;">
-                        <img class="card-img-top" src="../images/image1.jpg"
-                            alt="Card image cap">
+                        <img class="card-img-top" src="../images/image1.jpg" alt="Card image cap">
                         <div class="card-block">
                             <h4 class="card-title">Small</h4>
                             <p class="card-text">Price: Ksh 450</p>
-                            <a href="#" data-name="Small" data-price="450" class="add-to-cart btn btn-primary">Add to
+                            <a href="#" data-name="Small" id="btn-pizza" data-price="450"
+                                class="add-to-cart btn btn-primary">Add to
                                 cart</a>
                         </div>
                     </div>
                 </div>
                 <div class="col">
                     <div class="card" style="width: 20rem;">
-                        <img class="card-img-top"
-                            src="../images/image2.jpg"
-                            alt="Card image cap">
+                        <img class="card-img-top" src="../images/image2.jpg" alt="Card image cap">
                         <div class="card-block">
                             <h4 class="card-title">Medium</h4>
                             <p class="card-text">Price: Ksh 900</p>
-                            <a href="#" data-name="Medium" data-price="900" class="add-to-cart btn btn-primary">Add to
+                            <a href="#" data-name="Medium" id="btn-pizza" data-price="900"
+                                class="add-to-cart btn btn-primary">Add to
                                 cart</a>
                         </div>
                     </div>
                 </div>
                 <div class="col">
                     <div class="card" style="width: 20rem;">
-                        <img class="card-img-top"
-                            src="../images/image3.jpg"
-                            alt="Card image cap">
+                        <img class="card-img-top" src="../images/image3.jpg" alt="Card image cap">
                         <div class="card-block">
                             <h4 class="card-title">Large</h4>
                             <p class="card-text">Price: ksh 1200</p>
-                            <a href="#" data-name="Large" data-price="1200" class="add-to-cart btn btn-primary">Add to cart</a>
+                            <a href="#" data-name="Large" id="btn-pizza" data-price="1200"
+                                class="add-to-cart btn btn-primary">Add to cart</a>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
 
-        <!-- Modal -->
-        <div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-            aria-hidden="true">
-            <div class="modal-dialog modal-lg" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Cart</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <table class="show-cart table">
 
-                        </table>
-                        <div>Total price: $<span class="total-cart"></span></div>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Order now</button>
+            <!-- Modal -->
+            <div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Cart</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <table class="show-cart table">
+
+                            </table>
+                            <div>Total price: $<span class="total-cart"></span></div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Order now</button>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
     <div id="contact">
-    <div class="container">
-        <h2 class="text-center">Contact Us:</h2>
+        <div class="container">
+            <h2 class="text-center">Contact Us:</h2>
             <form>
-              <label for="fname">Name</label>
-              <input type="text" id="name" name="firstname" placeholder="Your name.." required="">
-          
-              <label for="lname">Email</label>
-              <input type="text" id="email" name="lastname" placeholder="Your last name.." required="">
-          
-              <label for="subject">Subject</label>
-              <textarea id="subject" name="subject" required="" placeholder="Write something.." style="height:200px"></textarea>
-          
-              <button class="bg-warning" id="submit">SUBMIT</button>
-          
+                <label for="fname">Name</label>
+                <input type="text" id="name" name="firstname" placeholder="Your name.." required="">
+
+                <label for="lname">Email</label>
+                <input type="text" id="email" name="lastname" placeholder="Your last name.." required="">
+
+                <label for="subject">Subject</label>
+                <textarea id="subject" name="subject" required="" placeholder="Write something.."
+                    style="height:200px"></textarea>
+
+                <button class="bg-warning" id="submit">SUBMIT</button>
+
             </form>
-          </div>
         </div>
+    </div>
 
 </body>
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <script src="js/scripts.js"></script>
+
 </html>
