@@ -55,7 +55,7 @@ nav ul a{
   }
   
   /* Style the submit button with a specific background color etc */
-  input[type=submit] {
+  button{
     background-color: #4CAF50;
     color: white;
     padding: 12px 20px;
@@ -72,5 +72,12 @@ nav ul a{
       background-image: url("../images/back2.jpg");
       background-repeat: no-repeat;
       background-size: cover;
+  }
+  #name,#email,#subject{
+      background-color: transparent;
+      color: white;
+  }
+  h2,label,::placeholder{
+      color: white;
   }
 
