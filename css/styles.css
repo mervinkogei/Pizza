@@ -6,7 +6,7 @@ body{
     height: 80vh;
 }
 .home{
-    padding-top: 20px;
+    padding-top: 15px;
 }
 .float-right{
     padding-top: 20px;
@@ -14,9 +14,11 @@ body{
     color: white;
     font-size: 25px;
 }
+nav ul a:hover{
+    text-decoration: none;
+}
 nav ul a{
     padding: 30px;
-    text-decoration: none;
     color: white;
 }
 .pizza{
@@ -28,6 +30,7 @@ nav ul a{
     padding-top: 15%;
     font-size: 20px;
     font-style: italic;
+    line-height: 1.6em;
 }
 .container{
     height: 100vh;
@@ -102,4 +105,13 @@ nav ul a{
 .social-icons img:hover{
     background-color: white;
     border-radius: 50%;
+}
+.additional-buttons {
+    background-image: url("../images/back2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+input{
+    background-color: transparent;
+    
 }
