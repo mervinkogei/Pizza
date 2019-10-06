@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
     <link rel="stylesheet" type="text/javascript" href="js/bootstrap.min.js">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <title>Pizza Palace</title>
 </head>
@@ -29,33 +30,38 @@
         </div>
         <div class="quote">
             <p> "The difference between pizza and your opinion <br> is that i actually asked for Pizza"</p>
-            <button class="bg-warning" id="pizza-order">ORDER NOW !</button>
+            <a href="#order"><button class="btn bg-warning floater infinite delay-2s">ORDER NOW</button></a>
         </div>
     </div>
 
 
 
     <nav class="navbar navbar-inverse bg-inverse fixed-top bg-faded">
-        <div class="row">
-            <div class="col">
-                <button type="button" class="btn btn-primary pd-10px" data-toggle="modal fade" data-target="#cart">Cart
-                    (<span class="total-count"></span>)</button><button class="clear-cart btn btn-danger">Clear
-                    Cart</button></div>
-        </div>
+       
     </nav>
 
 
     <!-- Main -->
-    <div id="order">
+    <div id="order" class="welcome-pizza">
         <div class="container">
+                <div class="row">
+                        <div class="col">
+                            <button type="button" class="btn btn-primary pd-10px" data-toggle="modal fade" data-target="#cart">Cart
+                                (<span class="total-count"></span>)</button><button class="clear-cart btn btn-danger">Clear
+                                Cart</button></div>
+                    </div>
             <h2 class="text-center">Make Order:</h2>
             <div class="row">
                 <div class="col">
                     <div class="card" style="width: 20rem;">
                         <img class="card-img-top" src="../images/image1.jpg" alt="Card image cap">
                         <div class="card-block">
-                            <h4 class="card-title">Small</h4>
-                            <p class="card-text">Price: Ksh 450</p>
+                            <h4 class="card-title text-center">Size</h4>
+                            <select class="form-control size">
+                                <option label="Small Ksh.500" value="500">Small</option>
+                                <option label="Medium Ksh.700" value="700">Medium</option>
+                                <option label="Large Ksh.1000" value="1000">Large</option>
+                              </select>
                             <a href="#" data-name="Small" id="btn-pizza" data-price="450"
                                 class="add-to-cart btn btn-primary">Add to
                                 cart</a>
@@ -66,8 +72,12 @@
                     <div class="card" style="width: 20rem;">
                         <img class="card-img-top" src="../images/image2.jpg" alt="Card image cap">
                         <div class="card-block">
-                            <h4 class="card-title">Medium</h4>
-                            <p class="card-text">Price: Ksh 900</p>
+                            <h4 class="card-title text-center">Crust</h4>
+                            <select class="form-control crust">
+                                <option label="Stuffed Ksh.500" value="500">Stuffed</option>
+                                <option label="Gluten-Free Ksh.200" value="200">Gluten-Free</option>
+                                <option label="Crispy Ksh.300" value="300">Crispy</option>
+                              </select>
                             <a href="#" data-name="Medium" id="btn-pizza" data-price="900"
                                 class="add-to-cart btn btn-primary">Add to
                                 cart</a>
@@ -78,8 +88,12 @@
                     <div class="card" style="width: 20rem;">
                         <img class="card-img-top" src="../images/image3.jpg" alt="Card image cap">
                         <div class="card-block">
-                            <h4 class="card-title">Large</h4>
-                            <p class="card-text">Price: ksh 1200</p>
+                            <h4 class="card-title text-center">Toppings</h4>
+                            <select class="form-control toppings">
+                                <option label="Olives Ksh.100" value="100">Olives</option>
+                                <option label="Cheese Ksh.50" value="50">Cheese</option>
+                                <option label="Pepperoni Ksh.80" value="80">Pepperoni</option>
+                              </select>
                             <a href="#" data-name="Large" id="btn-pizza" data-price="1200"
                                 class="add-to-cart btn btn-primary">Add to cart</a>
                         </div>
