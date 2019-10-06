@@ -5,6 +5,9 @@ body{
     width: 100%;
     height: 80vh;
 }
+.home{
+    padding-top: 20px;
+}
 .float-right{
     padding-top: 20px;
     text-decoration: none;
@@ -88,4 +91,15 @@ nav ul a{
   #order{
       height: 100vh;
       padding-top: 5%;
+}
+.social-icons{
+    text-align: center;
+   
+}
+.social-icons img{
+    padding: 15px;
+}
+.social-icons img:hover{
+    background-color: white;
+    border-radius: 50%;
 }
