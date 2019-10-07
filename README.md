@@ -26,9 +26,9 @@ To get a local copy of the site:
 ## BDD
 | Inputs |  Description |
 | :---         |          ---: |
-| Pizza size   | Select the Size. `eg size`|
-| Crust        | Select the crust choice.``eg Thick Crust``   |
-| Toppings     | Select the toppings choice.``eg Tomato``  |
+| Pizza size   | Select the Size. `eg small Ksh.550`|
+| Crust        | Select the crust choice.``eg Thick Crust Ksh.300``   |
+| Toppings     | Select the toppings choice.``eg Tomato Ksh.100``  |
 
 ## Bugs.
 The order in the cart cannot be deleted.
