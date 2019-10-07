@@ -23,6 +23,10 @@ To get a local copy of the site:
 * Javascript
 * JQuery
 
+## Screenshoots
+The Pizza Palace Landing page `https://github.com/mervinkogei/images/blob/master/pizza%20page.png`
+The Pizza order page `https://github.com/mervinkogei/images/blob/master/pizza%20order.png`
+
 ## BDD
 | Inputs |  Description |
 | :---         |          ---: |
