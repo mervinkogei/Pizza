@@ -1,3 +1,4 @@
+
 $(document).ready(function(){
     $("table").hide();
     $(".additional-buttons").hide();
